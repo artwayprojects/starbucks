@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import { lazy, Suspense } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import PrivateRoute from './components/routes/PrivateRoute'
+import PublicRoute from './components/routes/PublicRoute'
+import LandingPage from './components/LandingPage'
+
+import ROUTES from './routes'
+
+const GameContainer = lazy(() =>
+    import('./components/GameContainer' /* webpackChunkName: "GameContainer" */)
+)
+
+const GamesLibrary = lazy(() =>
+    import('./components/GamesLibrary' /* webpackChunkName: "GamesLibrary" */)
+)
+
+export default function App(props) {
+    return (
+        <Suspense fallback="loading...">
+            <Routes>
+                <Route
+                    path={ROUTES.LANDING_PAGE}
+                    element={withPublicRoute(<LandingPage />, {
+                        restricted: true,
+                    })}
+                />
+                <Route
+                    path={ROUTES.GAMES_LIBRARY}
+                    element={withPrivateRoute(<GamesLibrary />)}
+                />
+                <Route
+                    path={ROUTES.GAME_CONTAINER}
+                    element={withPrivateRoute(<GameContainer />)}
+                />
+            </Routes>
+        </Suspense>
+    )
 }
 
-export default App;
+function withPrivateRoute(children, routeProps = {}) {
+    return <PrivateRoute {...routeProps}>{children}</PrivateRoute>
+}
+
+function withPublicRoute(children, routeProps = {}) {
+    return <PublicRoute {...routeProps}>{children}</PublicRoute>
+}

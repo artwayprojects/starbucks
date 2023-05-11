@@ -1,4 +1,4 @@
-import { Figure, Row, Col } from 'react-bootstrap'
+import { Image, Row, Col } from 'react-bootstrap'
 
 import { getAllGames } from '../fakeAPI'
 import { GAME_IMAGE_THUMB_URL } from '../casinoSettings'
@@ -21,7 +21,7 @@ export default function LandingPage(props) {
                             key={name}
                             className="d-flex flex-column mb-4"
                         >
-                            <Figure.Image src={GAME_IMAGE_THUMB_URL} />
+                            <Image src={GAME_IMAGE_THUMB_URL} />
                             <a
                                 className="text-center text-dark"
                                 href={ROUTES.GAME}

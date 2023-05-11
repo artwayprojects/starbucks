@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -14,5 +15,11 @@ code {
 
 input:invalid {
   border: 1px solid red;
+}
+
+.body-bg {
+  min-height: 100vh;
+  background-size: 'cover';
+  z-index: 0
 }
 

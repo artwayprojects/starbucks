@@ -24,7 +24,7 @@ const GamesLibrary = lazy(() =>
 
 export default function App() {
     return (
-        <div style={{ backgroundImage: `url(${bgImage})` }}>
+        <div className="body-bg" style={{ backgroundImage: `url(${bgImage})` }}>
             <Container>
                 <NavBar />
                 <Suspense fallback={<Loader />}>

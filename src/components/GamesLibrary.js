@@ -2,13 +2,11 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Image, InputGroup, Form, Button } from 'react-bootstrap'
 
-import { getGamesByName, getAllGames } from '../../fakeAPI'
+import { getGamesByName, getAllGames } from '../fakeAPI'
 import {
     DEFAULT_GAMES_PER_PAGE,
     GAME_IMAGE_THUMB_URL,
-} from '../../casinoSettings'
-
-import './GamesLibrary.css'
+} from '../casinoSettings'
 
 export default function GamesLibrary() {
     const [gamesMaxCount, setGamesMaxCount] = useState(DEFAULT_GAMES_PER_PAGE)
@@ -52,7 +50,7 @@ export default function GamesLibrary() {
                         <Col sm={3} key={name} className=" mb-4">
                             <Link
                                 to={`/game/${id}`}
-                                className="game__container d-flex flex-column"
+                                className="text-center fw-bold display-5 text-dark d-flex flex-column"
                             >
                                 <Image
                                     src={GAME_IMAGE_THUMB_URL}
@@ -67,7 +65,7 @@ export default function GamesLibrary() {
             </Row>
 
             {games.length > visibleGames.length && (
-                <Button variant="outline-secondary" onClick={handleLoadMore}>
+                <Button variant="dark" onClick={handleLoadMore}>
                     Load more...
                 </Button>
             )}

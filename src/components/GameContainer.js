@@ -80,7 +80,7 @@ export default function GameContainer() {
     }
 
     return (
-        <Container className="p-0">
+        <Container className="p-0 pb-5">
             {alert}
             <Row>
                 <Col className="text-center mb-3">
@@ -90,7 +90,9 @@ export default function GameContainer() {
             </Row>
             <Row className="mb-4">
                 <Col sm={12} className="d-flex justify-content-center">
-                    <Figure.Image src={GAME_IMAGE_URL} />
+                    <Figure.Image
+                        src={GAME_IMAGE_URL}
+                    />
                 </Col>
             </Row>
             <Row>

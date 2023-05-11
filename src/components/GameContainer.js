@@ -25,8 +25,10 @@ export default function GameContainer() {
     const handleBet = (e) => {
         const betAmount = Number(e.target.innerText.split(' $')[0])
         const betWon = Math.random() < 0.5
+        const wonAmount = betAmount * 2
+
         const predictedBalance = betWon
-            ? gameBalance + betAmount * 2
+            ? gameBalance + wonAmount
             : gameBalance - betAmount
 
         if (betWon) {
@@ -38,7 +40,7 @@ export default function GameContainer() {
                     dismissible
                 >
                     <Alert.Heading className="text-center">
-                        &#128512; You won {predictedBalance}$
+                        &#128512; You won {wonAmount}$
                     </Alert.Heading>
                 </Alert>
             )

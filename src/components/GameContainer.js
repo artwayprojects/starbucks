@@ -8,6 +8,7 @@ import {
     Button,
     Stack,
     Alert,
+    Badge,
 } from 'react-bootstrap'
 
 import { getGameById } from '../fakeAPI'
@@ -92,9 +93,7 @@ export default function GameContainer() {
             </Row>
             <Row className="mb-4">
                 <Col sm={12} className="d-flex justify-content-center">
-                    <Figure.Image
-                        src={GAME_IMAGE_URL}
-                    />
+                    <Figure.Image src={GAME_IMAGE_URL} />
                 </Col>
             </Row>
             <Row>
@@ -102,7 +101,7 @@ export default function GameContainer() {
                     sm={4}
                     className="d-flex align-items-center justify-content-center fw-bold fs-2"
                 >
-                    Balance: {gameBalance}$
+                    <Badge bg="primary">Balance: {gameBalance}$</Badge>
                 </Col>
                 <Col sm={8}>
                     <Stack gap={3} direction="horizontal" className="ms-5">

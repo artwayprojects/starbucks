@@ -7,7 +7,7 @@ import PublicRoute from './components/Router/PublicRoute'
 import LandingPage from './components/LandingPage'
 import NavBar from './components/NavBar'
 import Loader from './Loader'
-
+import bgImage from './assets/bg.png'
 import ROUTES from './routes'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -24,28 +24,30 @@ const GamesLibrary = lazy(() =>
 
 export default function App() {
     return (
-        <Container>
-            <NavBar />
-            <Suspense fallback={<Loader />}>
-                <Routes>
-                    <Route
-                        path={ROUTES.LANDING_PAGE}
-                        element={withPublicRoute(<LandingPage />, {
-                            restricted: true
-                        })}
-                    />
+        <div style={{ backgroundImage: `url(${bgImage})` }}>
+            <Container>
+                <NavBar />
+                <Suspense fallback={<Loader />}>
+                    <Routes>
+                        <Route
+                            path={ROUTES.LANDING_PAGE}
+                            element={withPublicRoute(<LandingPage />, {
+                                restricted: true,
+                            })}
+                        />
 
-                    <Route
-                        path={ROUTES.GAMES_LIBRARY}
-                        element={withPrivateRoute(<GamesLibrary />)}
-                    />
-                    <Route
-                        path={ROUTES.GAME}
-                        element={withPrivateRoute(<GameContainer />)}
-                    />
-                </Routes>
-            </Suspense>
-        </Container>
+                        <Route
+                            path={ROUTES.GAMES_LIBRARY}
+                            element={withPrivateRoute(<GamesLibrary />)}
+                        />
+                        <Route
+                            path={ROUTES.GAME}
+                            element={withPrivateRoute(<GameContainer />)}
+                        />
+                    </Routes>
+                </Suspense>
+            </Container>
+        </div>
     )
 }
 

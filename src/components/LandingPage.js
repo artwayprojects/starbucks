@@ -23,7 +23,7 @@ export default function LandingPage(props) {
                         >
                             <Image src={GAME_IMAGE_THUMB_URL} />
                             <a
-                                className="text-center text-dark"
+                                className="text-center fw-bold display-5 text-dark"
                                 href={ROUTES.GAME}
                             >
                                 {name}

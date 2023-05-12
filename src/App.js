@@ -6,7 +6,7 @@ import PrivateRoute from './components/Router/PrivateRoute'
 import PublicRoute from './components/Router/PublicRoute'
 import LandingPage from './components/LandingPage'
 import NavBar from './components/NavBar'
-import Loader from './Loader'
+import Loader from './components/Loader'
 import bgImage from './assets/bg.png'
 import ROUTES from './routes'
 

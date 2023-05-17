@@ -1,6 +1,6 @@
 Please go to the root folder and run 
 
-npm install
+<code>npm install</code>
 and 
 npm run dev
 

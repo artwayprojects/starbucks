@@ -1,4 +1,4 @@
-Please go to root folder and run 
+Please go to the root folder and run 
 
 npm install
 npm run dev

@@ -1,5 +1,0 @@
-todo
-1. +Install express
-2.+ Install routes for login, register, logout, verify
-3. Install routes for game: updateGameBalance, getGame, getAllGames
-4. +Integrate mongose

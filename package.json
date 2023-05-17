@@ -1,0 +1,37 @@
+{
+    "name": "omega",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "nodemon --quiet server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/artemdev/casino.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/artemdev/casino/issues"
+    },
+    "homepage": "https://github.com/artemdev/casino#readme",
+    "devDependencies": {
+        "concurrently": "^8.0.1",
+        "nodemon": "^2.0.22"
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "4.17.1",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "5.11.18",
+        "passport": "0.4.1",
+        "passport-jwt": "4.0.0"
+    }
+}

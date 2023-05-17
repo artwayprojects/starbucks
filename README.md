@@ -4,4 +4,4 @@ Please go to the root folder and run
 <br /> 
 <code>npm run dev</code>
 
-it will run both backend and frontend
+This will run both backend and frontend

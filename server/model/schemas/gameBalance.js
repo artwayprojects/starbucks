@@ -11,10 +11,7 @@ const gameBalanceSchema = new Schema(
         amount: {
             type: Number,
             default: 100
-        },
-        gameId: {
-            type: String,
-        },
+        }
     },
     { versionKey: false, timestamps: true }
 )

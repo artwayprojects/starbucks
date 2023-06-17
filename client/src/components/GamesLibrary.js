@@ -4,7 +4,6 @@ import { Row, Col, Image, InputGroup, Form, Button } from 'react-bootstrap'
 
 import { getGamesByName, getAllGames } from '../api'
 import { DEFAULT_GAMES_PER_PAGE, GAME_IMAGE_THUMB_URL } from '../casinoSettings'
-import GameBalance from './GameBalance'
 
 export default function GamesLibrary() {
     const [gamesMaxCount, setGamesMaxCount] = useState(DEFAULT_GAMES_PER_PAGE)
@@ -57,9 +56,6 @@ export default function GamesLibrary() {
 
                                 <span className="text-center mb-1">{name}</span>
                             </Link>
-                            <div className="text-center fw-bold display-6">
-                                <GameBalance gameId={id} />
-                            </div>
                         </Col>
                     )
                 })}

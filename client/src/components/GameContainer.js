@@ -11,7 +11,7 @@ import {
 } from 'react-bootstrap'
 
 import GameBalanceBadge from './GameBalance/GameBalanceBadge'
-import { getGameById, getGameBalance, updateGameBalance } from '../api'
+import { getGameById, getGameBalance, updateBalance } from '../api'
 import { GAME_IMAGE_URL } from '../casinoSettings'
 
 export default function GameContainer() {
@@ -26,7 +26,7 @@ export default function GameContainer() {
 
     const handleBalanceUpdate = async (amount) => {
         setGameBalance(amount)
-        await updateGameBalance(id, amount)
+        await updateBalance(amount)
     }
 
     const handleBet = async (e) => {

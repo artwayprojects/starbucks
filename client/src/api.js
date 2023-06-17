@@ -19,14 +19,10 @@ export const getAllGames = () => {
 export const getGameById = (id) => GAMES_DB.find((game) => game.id === id)
 
 export const getGameBalance = async (gameId) => {
-    const reqBody = {
-        gameId,
-    }
-
     try {
         const {
             data: { data },
-        } = await axiosWithToken.post('/gameBalance', reqBody)
+        } = await axiosWithToken.post('/gameBalance')
 
         return data.balance
     } catch (error) {
@@ -34,16 +30,11 @@ export const getGameBalance = async (gameId) => {
     }
 }
 
-export const updateGameBalance = async (gameId, amount) => {
-    const reqBody = {
-        gameId,
-        amount,
-    }
-
+export const updateBalance = async (amount) => {
     try {
         const {
             data: { data },
-        } = await axiosWithToken.put('/gameBalance', reqBody)
+        } = await axiosWithToken.put('/gameBalance', { amount })
 
         return data.balance
     } catch (error) {

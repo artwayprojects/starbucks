@@ -7,14 +7,14 @@ const SECRET_KEY = process.env.JWT_SECRET
 
 const signUp = async (req, res) => {
     try {
-        const { username } = req.body
-        const currentUser = await Users.findByUsername(username)
+        const { email } = req.body
+        const currentUser = await Users.findByEmail(email)
         if (currentUser) {
             return res.status(httpCode.CONFLICT).json({
                 status: 'error',
                 code: httpCode.CONFLICT,
                 data: 'Conflict',
-                message: 'Username in use',
+                message: 'Email in use',
             })
         }
 
@@ -40,8 +40,8 @@ const signUp = async (req, res) => {
 
 const logIn = async (req, res) => {
     try {
-        const { username, password } = req.body
-        const user = await Users.findByUsername(username)
+        const { email, password } = req.body
+        const user = await Users.findByEmail(email)
         const validPassword = await user.validPassword(password)
 
         if (!user || !validPassword) {

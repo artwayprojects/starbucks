@@ -6,19 +6,25 @@ const SALT_WORK_FACTOR = 8
 
 const userSchema = new Schema(
     {
-        username: {
+        email: {
             type: String,
-            minLength: 2,
+            required: [true, 'Email required'],
         },
         password: {
             type: String,
             required: [true, 'Password required'],
         },
-        token: {
+        firstName: {
             type: String,
             default: 'none',
         },
-
+        lastName: {
+            type: String,
+            default: 'none',
+        },
+        token: {
+            type: String,
+        },
     },
     { versionKey: false, timestamps: true }
 )

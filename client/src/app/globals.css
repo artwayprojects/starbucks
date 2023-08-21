@@ -1,0 +1,221 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './fonts.css';
+
+:root {
+    --space-4: 2.4rem;
+    --letterSpacingNormal: -0.01em;
+    --colorTextBlack: rgba(0, 0, 0, 0.87);
+    --colorBlack40: rgba(0, 0, 0, 0.4);
+    --colorBlack70: rgba(0, 0, 0, 0.7);
+    --colorBlack100: rgba(0, 0, 0, 1);
+    --colorBlack10: rgba(0, 0, 0, 0.1);
+    --colorGreenAccent: #00754a;
+    --textSize2: 1.4rem;
+    --textSize3: 1.6rem;
+    --textSize4: 1.9rem;
+    --textSize8: 2.8rem;
+    --floatLabelFontSizeDesktop: 1.9rem;
+
+    --space-5: 3.2rem;
+    --space-6: 4rem;
+    --space-7: 4.8rem;
+    --space-9: 7.4rem;
+    --letterSpacingLoose: 0.1em;
+    --white: white;
+
+    --columnWidthMedium: 500px;
+}
+
+* {
+    font-family: 'SoDo Sans';
+    font-size: 10px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 50px;
+    }
+}
+
+.banner-content {
+    padding: var(--space-7);
+    letter-spacing: var(--letterSpacingNormal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+    .banner-content {
+        padding: var(--space-9);
+    }
+}
+@media screen and (max-width: 724px) {
+    .banner-content {
+        padding: var(--space-9);
+    }
+}
+.banner-text {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: var(--space-5);
+}
+.banner-heading {
+    margin-bottom: var(--space-4);
+}
+
+.banner-image {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.banner-image img {
+    max-width: 100%;
+}
+
+.btn {
+    font-size: var(--textSize3);
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--colorTextBlack);
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid var(--colorTextBlack);
+    text-transform: none !important;
+}
+.btn:hover {
+    border: 1px solid var(--colorTextBlack);
+    background-color: var(--colorBlack10);
+}
+
+.btn-small {
+    font-size: var(--textSize2);
+    background-color: transparent;
+}
+
+.btn-signin:hover {
+    background-color: var(--colorBlack10);
+    border: 1px solid var(--colorTextBlack);
+    color: var(--colorTextBlack);
+}
+
+.btn-signin-large {
+    font-size: var(--textSize4);
+    background-color: var(--colorGreenAccent);
+    border-radius: 500px;
+    color: var(--white);
+    font-weight: 400;
+    padding: 18px var(--space-4);
+    border: none;
+}
+.btn-signin-large:hover {
+    background-color: var(--colorGreenAccent);
+    border: none;
+}
+
+.btn-join {
+    color: var(--white);
+    background-color: var(--colorTextBlack);
+}
+
+.btn-join:hover {
+    background-color: var(--colorBlack70);
+}
+
+.nav-link {
+    font-size: var(--textSize2);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--colorTextBlack);
+    letter-spacing: var(--letterSpacingLoose);
+}
+.nav-link:hover {
+    color: #00754a;
+}
+
+.nav-link__logo {
+    margin-right: var(--space-6);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.find-store {
+    text-transform: none;
+    font-size: var(--textSize2);
+    font-weight: 600;
+    letter-spacing: var(--letterSpacingNormal);
+    margin-right: var(--space-6);
+}
+
+.location-icon {
+    font-size: 2.5rem;
+    color: var(--colorBlack100);
+}
+
+.rounded-card-width {
+    width: var(--columnWidthMedium);
+}
+
+.text-bold {
+    font-weight: 600;
+    font-size: var(--textSize8);
+}
+.text-bold-4 {
+    font-weight: 600;
+    font-size: var(--textSize4);
+}
+
+.text-green {
+    color: var(--colorGreenAccent);
+    font-size: var(--textSize4);
+}
+
+.form-input {
+    height: var(--space-7);
+    line-height: var(--space-7);
+}
+.form-input input {
+    position: relative;
+    font-size: var(--floatLabelFontSizeDesktop);
+    border-radius: 8px !important;
+    border: 1px solid var(--colorBlack40);
+    padding-left: 32px;
+}
+.form-input:before {
+    content: '*';
+    position: absolute;
+    color: var(--colorGreenAccent);
+    font-size: var(--textSize3);
+    width: 10px;
+    height: 10px;
+    left: 20px;
+    z-index: 20;
+}
+.form-description {
+    font-size: var(--textSize3);
+    color: var(--colorTextBlack);
+}
+
+.password-icon {
+    position: absolute;
+    right: 20px;
+}
+.form-switch .form-check-input {
+    width: 4em;
+    height: 2em;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.form-switch label {
+    font-size: var(--textSize4);
+}

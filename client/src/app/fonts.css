@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-BlackItalic.eot');
+    src: local('SoDo Sans Black Italic'), local('SoDoSans-BlackItalic'),
+        url('/font/SoDoSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-BlackItalic.woff2') format('woff2'),
+        url('/font/SoDoSans-BlackItalic.woff') format('woff'),
+        url('/font/SoDoSans-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-Black.eot');
+    src: local('SoDo Sans Black'), local('SoDoSans-Black'),
+        url('/font/SoDoSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-Black.woff2') format('woff2'),
+        url('/font/SoDoSans-Black.woff') format('woff'),
+        url('/font/SoDoSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-Bold.eot');
+    src: local('SoDo Sans Bold'), local('SoDoSans-Bold'),
+        url('/font/SoDoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-Bold.woff2') format('woff2'),
+        url('/font/SoDoSans-Bold.woff') format('woff'),
+        url('/font/SoDoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-LightItalic.eot');
+    src: local('SoDo Sans Light Italic'), local('SoDoSans-LightItalic'),
+        url('/font/SoDoSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-LightItalic.woff2') format('woff2'),
+        url('/font/SoDoSans-LightItalic.woff') format('woff'),
+        url('/font/SoDoSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-Regular.eot');
+    src: local('SoDo Sans Regular'), local('SoDoSans-Regular'),
+        url('/font/SoDoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-Regular.woff2') format('woff2'),
+        url('/font/SoDoSans-Regular.woff') format('woff'),
+        url('/font/SoDoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-Light.eot');
+    src: local('SoDo Sans Light'), local('SoDoSans-Light'),
+        url('/font/SoDoSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-Light.woff2') format('woff2'),
+        url('/font/SoDoSans-Light.woff') format('woff'),
+        url('/font/SoDoSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-Italic.eot');
+    src: local('SoDo Sans Italic'), local('SoDoSans-Italic'),
+        url('/font/SoDoSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-Italic.woff2') format('woff2'),
+        url('/font/SoDoSans-Italic.woff') format('woff'),
+        url('/font/SoDoSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-BoldItalic.eot');
+    src: local('SoDo Sans Bold Italic'), local('SoDoSans-BoldItalic'),
+        url('/font/SoDoSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-BoldItalic.woff2') format('woff2'),
+        url('/font/SoDoSans-BoldItalic.woff') format('woff'),
+        url('/font/SoDoSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-ThinItalic.eot');
+    src: local('SoDo Sans Thin Italic'), local('SoDoSans-ThinItalic'),
+        url('/font/SoDoSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-ThinItalic.woff2') format('woff2'),
+        url('/font/SoDoSans-ThinItalic.woff') format('woff'),
+        url('/font/SoDoSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-SemiBoldItalic.eot');
+    src: local('SoDo Sans SemiBold Italic'), local('SoDoSans-SemiBoldItalic'),
+        url('/font/SoDoSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-SemiBoldItalic.woff2') format('woff2'),
+        url('/font/SoDoSans-SemiBoldItalic.woff') format('woff'),
+        url('/font/SoDoSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-Thin.eot');
+    src: local('SoDo Sans Thin'), local('SoDoSans-Thin'),
+        url('/font/SoDoSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-Thin.woff2') format('woff2'),
+        url('/font/SoDoSans-Thin.woff') format('woff'),
+        url('/font/SoDoSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('/font/SoDoSans-SemiBold.eot');
+    src: local('SoDo Sans SemiBold'), local('SoDoSans-SemiBold'),
+        url('/font/SoDoSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/font/SoDoSans-SemiBold.woff2') format('woff2'),
+        url('/font/SoDoSans-SemiBold.woff') format('woff'),
+        url('/font/SoDoSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

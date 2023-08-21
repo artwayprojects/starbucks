@@ -4,9 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "server": "nodemon --quiet server",
-        "client": "npm run dev --prefix client",
-        "dev": "concurrently \"npm run server\" \"npm run client\""
+        "start": "node ."
     },
     "keywords": [],
     "author": "",
@@ -30,8 +28,5 @@
         "react-bootstrap": "^2.8.0",
         "react-icons": "^4.10.1",
         "react-nextjs-toast": "^1.2.5"
-    },
-    "engines": {
-        "node": "10.x"
     }
 }

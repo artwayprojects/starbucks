@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import PasswordVisible from '../../public/PasswordVisible.svg'
-import PasswordHidden from '../../public/PasswordHidden.svg'
+
 export default function PasswordVisibilityIcon ({
     showPassword,
     setShowPassword,
@@ -11,7 +10,7 @@ export default function PasswordVisibilityIcon ({
         <>
             {showPassword ? (
                 <Image
-                    src={PasswordVisible}
+                    src="/PasswordVisible.svg"
                     width="24"
                     height="24"
                     alt="password visible"
@@ -19,7 +18,7 @@ export default function PasswordVisibilityIcon ({
                 />
             ) : (
                 <Image
-                    src={PasswordHidden}
+                    src={'/PasswordHidden.svg'}
                     width="24"
                     height="24"
                     alt="password visible"

@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import { BiShow, BiHide } from 'react-icons/bi'
 
-export default function PasswordVisibilityIcon ({
+export default function PasswordVisibilityIcon({
     showPassword,
     setShowPassword,
 }) {
@@ -9,21 +9,9 @@ export default function PasswordVisibilityIcon ({
     return (
         <>
             {showPassword ? (
-                <Image
-                    src="/PasswordVisible.svg"
-                    width="24"
-                    height="24"
-                    alt="password visible"
-                    onClick={toggleShowPassword}
-                />
+                <BiShow size="2.5em" onClick={toggleShowPassword} />
             ) : (
-                <Image
-                    src={'/PasswordHidden.svg'}
-                    width="24"
-                    height="24"
-                    alt="password visible"
-                    onClick={toggleShowPassword}
-                />
+                <BiHide size="2.5em" onClick={toggleShowPassword} />
             )}
         </>
     )
